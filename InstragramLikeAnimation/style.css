@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    background: url(./image/deer_white_blue.jpeg) center center/cover;
+}
+
+.box {
+    /* height: 400px; */
+    width: 400px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+    box-shadow:  0 0 16px white;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#love{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) ;
+    color: white;
+    font-size: 50px;
+    opacity: 0.0;
+    transition: all .6s ease;
+}
