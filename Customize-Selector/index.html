@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Custom File Selector</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .file-selector {
+            margin-bottom: 20px;
+        }
+
+        .custom-file-upload {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-file-upload:hover {
+            background-color: #0056b3;
+        }
+
+        .custom-file-upload input[type="file"] {
+            display: none;
+        }
+    </style>
+
+    <body>
+        <div class="file-selector">
+            <label for="upload-video" class="custom-file-upload">
+                <span>Select Video</span>
+                <input type="file" id="upload-video" accept="video/mp4">
+            </label>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
