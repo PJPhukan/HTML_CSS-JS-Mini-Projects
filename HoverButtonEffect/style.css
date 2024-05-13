@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #262626;
+    background: black;
+  }
+  ul {
+    display: flex;
+  }
+  ul li {
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  ul li::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    /* background:#031bf5; */
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: 0.5s;
+  }
+  ul li:hover::before {
+    filter: blur(3px);
+    transform: scale(1.2);
+    /* box-shadow: 0 0 15px #031bf5; */
+  }
+  li:nth-child(1):hover::before {
+    box-shadow: 0 0 15px #031bf5;
+  }
+  li:nth-child(2):hover::before {
+    box-shadow: 0 0 15px #e70550;
+  }
+  li:nth-child(3):hover::before {
+    box-shadow: 0 0 15px #00f7ff;
+  }
+  li:nth-child(4):hover::before {
+    box-shadow: 0 0 15px red;
+  }
+
+  ul li:nth-child(1):hover {
+    color: #031bf5;
+    box-shadow: 0 0 15px #031bf5;
+    text-shadow: 0 0 15px #031bf5;
+  }
+  ul li:nth-child(2):hover {
+    color: #e70550;
+    box-shadow: 0 0 15px #e70550;
+    text-shadow: 0 0 15px #e70550;
+  }
+  ul li:nth-child(3):hover {
+    color: #00f7ff;
+    box-shadow: 0 0 15px #00f7ff;
+    text-shadow: 0 0 15px #00f7ff;
+  }
+  ul li:nth-child(4):hover {
+    color: red;
+    box-shadow: 0 0 15px red;
+    text-shadow: 0 0 15px red;
+  }
+
+  ul li:hover::before {
+    box-shadow: 0 0 15px #426782;
+  }
+  ul li :nth-child(1)::before {
+    background: #031bf5;
+  }
+  ul li :nth-child(2)::before {
+    background: #e70550;
+  }
+  ul li :nth-child(3)::before {
+    background: #00f7ff;
+  }
+  ul li :nth-child(4)::before {
+    background: red;
+  }
