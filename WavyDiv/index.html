@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wavy div</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <div class="box" id="box1">
+        <div class="content">
+          <h2>Wavy Div</h2>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum dolor
+          sed, ut soluta cupiditate, alias, reprehenderit blanditiis nam quasi
+          nihil veritatis reiciendis a quia incidunt natus perferendis itaque
+          quibusdam distinctio! Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Nisi, dicta perferendis? Debitis suscipit rem
+          explicabo, eligendi velit rerum soluta modi dicta reprehenderit
+          assumenda tempora vel! Nisi minus incidunt assumenda nihil.
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box" id="box2">
+        <div class="content">
+          <h2>Water Wave div</h2>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum dolor
+          sed, ut soluta cupiditate, alias, reprehenderit blanditiis nam quasi
+          nihil veritatis reiciendis a quia incidunt natus perferendis itaque
+          quibusdam distinctio! Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Nisi, dicta perferendis? Debitis suscipit rem
+          explicabo, eligendi velit rerum soluta modi dicta reprehenderit
+          assumenda tempora vel! Nisi minus incidunt assumenda nihil.
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box" id="box3">
+        <div class="content">
+          <h2>Water Wave div</h2>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum dolor
+          sed, ut soluta cupiditate, alias, reprehenderit blanditiis nam quasi
+          nihil veritatis reiciendis a quia incidunt natus perferendis itaque
+          quibusdam distinctio! Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Nisi, dicta perferendis? Debitis suscipit rem
+          explicabo, eligendi velit rerum soluta modi dicta reprehenderit
+          assumenda tempora vel! Nisi minus incidunt assumenda nihil.
+        </div>
+      </div>
+    </div>
+    <svg>
+      <filter id="wavy">
+        <feTurbulence x="0" y="0" baseFrequency="0.04" numOctaves="5" seed="2">
+        <animate attributeName="baseFrequency" dur="60s" values="0.05;0.09;0.02" repeateCount="indefinite"></animate>
+      </feTurbulence>
+        <feDisplacementMap in="SourceGraphic" scale="30" />
+      </filter>
+    </svg>
+  </body>
+</html>
